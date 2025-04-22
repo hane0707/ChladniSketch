@@ -1,0 +1,27 @@
+[project]
+name = "chladnisketch"
+version = "0.1.0"
+description = "A Streamlit app for visualizing Chladni patterns based on audio input."
+authors = [
+    {name = "hane0707"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit (>=1.44.1,<2.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "librosa (>=0.11.0,<0.12.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "streamlit-webrtc (>=0.62.4,<0.63.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+  { include = "chladnisketch" }
+]
